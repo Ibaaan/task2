@@ -14,5 +14,9 @@ public class Main {
         n = sc.nextInt();
         ListWork.bubbleSort(n);
         System.out.println();
+
+        System.out.println("№3 ");
+        EmployeeSort.sort();
+        System.out.println();
     }
 }
