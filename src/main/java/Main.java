@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import static java.lang.Thread.sleep;
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -23,6 +25,14 @@ public class Main {
         HTTPRequest.headerRequest();
         System.out.println();
 
-
+        System.out.println("№5");
+        FileDownload fd = new FileDownload();
+        fd.start();
+        try {
+            sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        fd.stop();
     }
 }
